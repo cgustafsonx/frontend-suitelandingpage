@@ -3,7 +3,7 @@
   padding: 0;
   font: inherit;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-family: "Epilogue", sans-serif;
 }
 
@@ -35,10 +35,16 @@
 
 .primary-header {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 80px;
 }
 
 .primary-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-primary-creamwhite);
   margin-bottom: 40px;
 }
 
@@ -48,13 +54,14 @@
   justify-content: center;
   background-color: var(--clr-secondary-darkblue);
   color: var(--clr-primary-creamwhite);
-  margin: auto;
+  border-radius: 10px;
 }
 
 body {
   min-height: 100vh;
   font-family: var(--ff-primary);
   background-color: var(--clr-primary-creamwhite);
+  margin: 20px;
 }
 
 .highlight {
@@ -66,7 +73,7 @@ body {
   font-size: 38px;
   line-height: 50px;
   margin-bottom: 32px;
-  align-items: center;
+  text-align: center;
 }
 
 .subtitle {
@@ -74,6 +81,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+  text-align: center;
 }
 
 .details {
@@ -120,19 +128,13 @@ body {
 }
 
 .quote-review {
-  display: flex;
-  flex-wrap: wrap;
-  color: var(--clr-primary-creamwhite);
+  color: var(--clr-primary-cream);
   font-family: var(--ff-primary);
   text-align: center;
-  font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-}
-
-.quote-name {
-  display: flex;
-  flex-wrap: wrap;
+  text-align: center;
+  width: 90%;
 }
 
 .primary-footer {
@@ -140,24 +142,23 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   background-color: var(--clr-primary-cream);
+  height: 377px;
+  width: 100%;
 }
 
 .logo-footer .copyright-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .social {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-}
-
-img,
-svg {
-  width: fit-content;
 }
 
 ul,
@@ -210,6 +211,10 @@ li {
 
 .mb-xl {
   margin-bottom: 40px;
+}
+
+.mb-xxl {
+  margin-bottom: 60px;
 }
 
 .uc {
